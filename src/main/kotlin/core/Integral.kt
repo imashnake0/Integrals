@@ -1,5 +1,8 @@
 package core
 
+/**
+ * TODO: Kdoc.
+ */
 class Integral(val integrand: (Double) -> Double) {
     fun integrate(
         from: Double,
