@@ -76,13 +76,7 @@ fabric.properties
 captures/
 
 # IntelliJ
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/assetWizardSettings.xml
-.idea/dictionaries
-.idea/libraries
-.idea/caches
+.idea/
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
@@ -101,3 +95,32 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# IntelliJ
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Android Profiling
+*.hprof
+lint.xml
