@@ -13,20 +13,19 @@ class Integral(val integrand: (Double) -> Double) {
         method: Methods = SIMPSONS
     ): Double {
         when(method) {
-            RECTANGLE -> TODO()
-            TRAPEZOIDAL -> TODO()
-            SIMPSONS -> TODO()
-            else -> {
+            RECTANGLE -> {
                 var x = from
                 var integral = 0.0
 
                 while(x <= to) {
+                    integral += integrand(x + differential/2)*differential
                     x += differential
-                    integral += integrand(x)*differential
                 }
-
                 return integral
             }
+            TRAPEZOIDAL -> TODO()
+            SIMPSONS -> TODO()
+            else -> TODO()
         }
     }
 }
