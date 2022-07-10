@@ -1,6 +1,7 @@
 package core
 
 import core.Methods.*
+import kotlin.math.abs
 
 /**
  * TODO: Kdoc.
@@ -23,7 +24,17 @@ class Integral(val integrand: (Double) -> Double) {
                 }
                 return integral
             }
-            TRAPEZOIDAL -> TODO()
+            TRAPEZOIDAL -> {
+                // This is actually exactly equivalent to the midpoint rectangle rule!
+                var x = from
+                var integral = 0.0
+
+                while(x <= to) {
+                    integral += integrand(x + differential/2)*differential
+                    x += differential
+                }
+                return integral
+            }
             SIMPSONS -> TODO()
             else -> TODO()
         }
