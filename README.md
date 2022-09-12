@@ -3,7 +3,7 @@ Project (potential libray) for working with integrals in Kotlin.
 
 # [License](https://github.com/imashnake0/Integrals/blob/main/LICENSE)
 ```
-Copyright 2022 Kamalesh Reddy Paluru
+Copyright 2022 imashnake0
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
